@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SolFinder VR</title>
+    <meta name="description" content="SolFinder VR">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  </head>
+  
+  <body>
+    <!-- Remix Button -->
+    <a-scene>
+      <a-plane
+               position="0 0 -4"
+               rotation="-90 0 0"
+               width="4"
+               height="4"
+               color="#7BC8A4"
+               shadow
+               material="src: https://cdn.glitch.com/c77e6b60-93ab-4f4e-b1c2-afab886572f1%2FLogo.png?1557414934367"
+               >
+      </a-plane>
+      <a-plane
+               position="0 2 -6"
+               rotation="0 0 0"
+               width="4"
+               height="4"                       
+               color="#7BC8A4"
+               shadow
+               material="src: https://cdn.glitch.com/c77e6b60-93ab-4f4e-b1c2-afab886572f1%2FLogo.png?1557414934367"
+               >
+      
+      </a-plane>
+      <a-plane
+               position="0 2 -6"
+               rotation="0 0 0"
+               width="1"
+               height="1"                       
+               #color="#7BC8A4"
+               shadow
+               material="src: https://cdn.glitch.com/7a6daf96-5a77-41df-97f1-4a40a9d09368%2FSmiley.svg?1522927878639"
+               >
+                <a-animation
+                   attribute="position"
+                   from="0 4.5 -6"
+                   to="0 6 -6"
+                   repeat="indefinite"
+                   dur="1000"
+                   direction="alternate"
+                   #easing="ease-out-elastic"
+                   ></a-animation>
+      </a-plane>
+      <a-sky
+             color="#0000ee"></a-sky>
+    </a-scene>
+  </body>
+</html>
